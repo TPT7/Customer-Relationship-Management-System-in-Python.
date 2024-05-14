@@ -1,20 +1,22 @@
-import psycopg2
-import psycopg2.extras
+# Install Mysql on your computer
+# https://dev.mysql.com/downloads/installer/
+# pip install mysql
+# pip install mysql-connector
+# pip install mysql-connector-python 
 
-def connect_to_postgres():
-    try:
-        global conn
-        conn = psycopg2.connect(host='localhost', database='crmdb', user='tpt', password='admin')
-        
-        conn.autocommit = True
-        print('Successfully connected to database')
-        
-    except Exception as err:
-        if err:
-            print('Error connecting to database', err)
-        
-connect_to_postgres()
+import mysql.connector
 
+dataBase = mysql.connector.connect(
+	host = 'localhost',
+	user = 'root',
+	passwd = 'password123'
 
+	)
 
+# prepare a cursor object
+cursorObject = dataBase.cursor()
 
+# Create a database
+cursorObject.execute("CREATE DATABASE elderco")
+
+print("All Done!")
