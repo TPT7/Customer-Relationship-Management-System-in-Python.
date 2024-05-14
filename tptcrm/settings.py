@@ -64,12 +64,12 @@ WSGI_APPLICATION = 'tptcrm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'elderco',
-        'USER': 'root',
-        'PASSWORD': 'password123',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'crmdb',
+        'USER': 'tpt',
+        'PASSWORD': 'admin',
         'HOST': 'localhost',
-        'PORT': '3306',
+        'PORT': '5432',
     }
 }
 
