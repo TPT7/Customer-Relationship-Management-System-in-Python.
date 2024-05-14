@@ -38,7 +38,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'dcrm.urls'
+ROOT_URLCONF = 'tptcrm.urls'
 
 TEMPLATES = [
     {
@@ -56,7 +56,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'dcrm.wsgi.application'
+WSGI_APPLICATION = 'tptcrm.wsgi.application'
 
 
 # Database
